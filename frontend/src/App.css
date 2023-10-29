@@ -154,6 +154,12 @@
 
 }
 
+#nav-links {
+  padding: var(--default-button-padding);
+
+  color: #fff;
+}
+
 .navbar-landing .navbar-items .navbar-btn-container .navbar-register-btn, 
 .navbar-landing .navbar-items .navbar-btn-container .navbar-signout-signin-btn{
   padding: var(--default-button-padding);

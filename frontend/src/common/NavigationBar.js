@@ -82,16 +82,22 @@ export const LandingPageNavigationBar = () => {
 
                         <ul className="navbar-nav me-auto mb-2 mb-lg-0">
 
-                            <li className="nav-item"><a className="nav-link" href="/">Home</a></li>
-
-                            <li className="nav-item"><a className="nav-link" href="/frequently-asked-questions">FAQs</a>
+                            <li className="nav-item">
+                                <Link to="/" className="nav-link">Home</Link>
                             </li>
 
-                            <li className="nav-item"><a className="nav-link" href="/user-reviews">Reviews</a></li>
+                            <li className="nav-item">
+                                <Link to="/frequently-asked-questions" className="nav-link">FAQs</Link>
+                            </li>
+    
+                            <li className="nav-item">
+                                <Link to="/user-reviews" className="nav-link">Reviews</Link>
+                            </li>
 
-                            <li className="nav-item"><a className="nav-link" href="/safety-tips">Safety</a></li>
-                            {/* <li className="nav-item"> <a className="nav-link" href="/create">Post Ad</a> </li> */}
-
+                            <li className="nav-item">
+                                <Link to="/safety-tips" className="nav-link">Safety</Link>
+                            </li>
+                            
                             {auth && (
                                 <Link to="/create">
                                     {/* <li className="nav-item"> <a className="nav-link" href="/safety-tips">Create Ad</a> </li> */}
