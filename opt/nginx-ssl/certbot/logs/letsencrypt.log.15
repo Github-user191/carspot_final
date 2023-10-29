@@ -1,0 +1,21 @@
+2023-03-01 18:55:46,205:DEBUG:certbot._internal.main:certbot version: 2.0.0
+2023-03-01 18:55:46,205:DEBUG:certbot._internal.main:Location of certbot entry point: /usr/local/bin/certbot
+2023-03-01 18:55:46,205:DEBUG:certbot._internal.main:Arguments: []
+2023-03-01 18:55:46,206:DEBUG:certbot._internal.main:Discovered plugins: PluginsRegistry(PluginEntryPoint#manual,PluginEntryPoint#null,PluginEntryPoint#standalone,PluginEntryPoint#webroot)
+2023-03-01 18:55:46,253:DEBUG:certbot._internal.log:Root logging level set at 30
+2023-03-01 18:55:46,261:DEBUG:certbot._internal.display.obj:Notifying user: Processing /etc/letsencrypt/renewal/carspot.live.conf
+2023-03-01 18:55:46,265:INFO:certbot._internal.storage:Attempting to parse the version 2.2.0 renewal configuration file found at /etc/letsencrypt/renewal/carspot.live.conf with version 2.0.0 of Certbot. This might not work.
+2023-03-01 18:55:46,310:DEBUG:certbot._internal.plugins.selection:Requested authenticator <certbot._internal.cli.cli_utils._Default object at 0x7fc31e75e3b0> and installer <certbot._internal.cli.cli_utils._Default object at 0x7fc31e75e3b0>
+2023-03-01 18:55:46,372:DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): r3.o.lencr.org:80
+2023-03-01 18:55:46,392:DEBUG:urllib3.connectionpool:http://r3.o.lencr.org:80 "POST / HTTP/1.1" 200 503
+2023-03-01 18:55:46,394:DEBUG:certbot.ocsp:OCSP response for certificate /etc/letsencrypt/archive/carspot.live/cert1.pem is signed by the certificate's issuer.
+2023-03-01 18:55:46,395:DEBUG:certbot.ocsp:OCSP certificate status for /etc/letsencrypt/archive/carspot.live/cert1.pem is: OCSPCertStatus.GOOD
+2023-03-01 18:55:46,404:DEBUG:certbot._internal.display.obj:Notifying user: Certificate not yet due for renewal
+2023-03-01 18:55:46,411:DEBUG:certbot._internal.plugins.selection:Requested authenticator webroot and installer None
+2023-03-01 18:55:46,412:DEBUG:certbot._internal.display.obj:Notifying user: 
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+2023-03-01 18:55:46,412:DEBUG:certbot._internal.display.obj:Notifying user: The following certificates are not due for renewal yet:
+2023-03-01 18:55:46,412:DEBUG:certbot._internal.display.obj:Notifying user:   /etc/letsencrypt/live/carspot.live/fullchain.pem expires on 2023-05-29 (skipped)
+2023-03-01 18:55:46,413:DEBUG:certbot._internal.display.obj:Notifying user: No renewals were attempted.
+2023-03-01 18:55:46,413:DEBUG:certbot._internal.display.obj:Notifying user: - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+2023-03-01 18:55:46,413:DEBUG:certbot._internal.renewal:no renewal failures

@@ -1,0 +1,704 @@
+[
+  {
+    "id": 0,
+    "province": "Eastern Cape",
+    "cities": [
+      {
+        "id": 0,
+        "city": "Eastern Cape"
+      },
+      {
+        "id": 1,
+        "city": "Port Elizabeth"
+      },
+      {
+        "id": 2,
+        "city": "East London"
+      },
+      {
+        "id": 3,
+        "city": "Umtata"
+      },
+      {
+        "id": 4,
+        "city": "Queenstown"
+      },
+      {
+        "id": 5,
+        "city": "Ulundi"
+      },
+      {
+        "id": 6,
+        "city": "Uitenhage"
+      },
+      {
+        "id": 7,
+        "city": "Grahamstown"
+      },
+      {
+        "id": 8,
+        "city": "Graaf-Reinet"
+      },
+      {
+        "id": 9,
+        "city": "Aliwal North"
+      },
+      {
+        "id": 10,
+        "city": "Jeffreys Bay"
+      },
+      {
+        "id": 11,
+        "city": "Cradock"
+      },
+      {
+        "id": 12,
+        "city": "Morgan's Bay"
+      },
+      {
+        "id": 13,
+        "city": "Port Alfred"
+      },
+      {
+        "id": 14,
+        "city": "Stutterheim"
+      },
+      {
+        "id": 15,
+        "city": "King Williams Town"
+      },
+      {
+        "id": 16,
+        "city": "Middelburg"
+      },
+      {
+        "id": 17,
+        "city": "Alexandria"
+      },
+      {
+        "id": 18,
+        "city": "Coffee Bay"
+      },
+      {
+        "id": 19,
+        "city": "Rhodes"
+      }
+    ]
+  },
+  {
+    "id": 1,
+    "province": "Free State",
+    "cities": [
+      {
+        "id": 20,
+        "city": "Free State"
+      },
+      {
+        "id": 21,
+        "city": "Bloemfontein"
+      },
+      {
+        "id": 22,
+        "city": "Welkom"
+      },
+      {
+        "id": 23,
+        "city": "Bethlehem"
+      },
+      {
+        "id": 24,
+        "city": "Harrismith"
+      },
+      {
+        "id": 25,
+        "city": "Rosendal"
+      },
+      {
+        "id": 26,
+        "city": "Excelsior"
+      },
+      {
+        "id": 27,
+        "city": "Hertzogville"
+      },
+      {
+        "id": 28,
+        "city": "Virginia"
+      },
+      {
+        "id": 29,
+        "city": "Edenville"
+      },
+      {
+        "id": 30,
+        "city": "Sasolburg"
+      },
+      {
+        "id": 31,
+        "city": "Smithfield"
+      },
+      {
+        "id": 32,
+        "city": "Zastron"
+      },
+      {
+        "id": 33,
+        "city": "Luckhoff"
+      },
+      {
+        "id": 34,
+        "city": "Petrusburg"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "province": "Gauteng",
+    "cities": [
+      {
+        "id": 35,
+        "city": "Gauteng"
+      },
+      {
+        "id": 36,
+        "city": "Vereeniging"
+      },
+      {
+        "id": 37,
+        "city": "Pretoria"
+      },
+      {
+        "id": 38,
+        "city": "Randburg"
+      },
+      {
+        "id": 39,
+        "city": "Roodepoort"
+      },
+      {
+        "id": 40,
+        "city": "Centurion"
+      },
+      {
+        "id": 41,
+        "city": "Springs"
+      },
+      {
+        "id": 42,
+        "city": "Sandton"
+      },
+      {
+        "id": 43,
+        "city": "Benoni"
+      },
+      {
+        "id": 44,
+        "city": "Alberton"
+      },
+      {
+        "id": 45,
+        "city": "Vanderbijlpark"
+      },
+      {
+        "id": 46,
+        "city": "Johannesburg"
+      },
+      {
+        "id": 47,
+        "city": "Carletonville"
+      },
+      {
+        "id": 48,
+        "city": "Lenasia"
+      },
+      {
+        "id": 49,
+        "city": "Boksburg"
+      },
+      {
+        "id": 50,
+        "city": "Edenvale"
+      },
+      {
+        "id": 51,
+        "city": "Germiston"
+      },
+      {
+        "id": 52,
+        "city": "Mamelodi"
+      },
+      {
+        "id": 53,
+        "city": "Heidelberg"
+      },
+      {
+        "id": 54,
+        "city": "Refilwe"
+      },
+      {
+        "id": 55,
+        "city": "Krugersdorp"
+      },
+      {
+        "id": 56,
+        "city": "Muldersdrift"
+      },
+      {
+        "id": 57,
+        "city": "Randfontein"
+      },
+      {
+        "id": 58,
+        "city": "Ratanda"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "province": "Kwazulu-Natal",
+    "cities": [
+      {
+        "id": 59,
+        "city": "Kwazulu-Natal"
+      },
+      {
+        "id": 60,
+        "city": "Durban"
+      },
+      {
+        "id": 61,
+        "city": "Vryheid"
+      },
+      {
+        "id": 62,
+        "city": "Port Shepstone"
+      },
+      {
+        "id": 63,
+        "city": "Ladysmith"
+      },
+      {
+        "id": 64,
+        "city": "Pietermaritzburg"
+      },
+      {
+        "id": 65,
+        "city": "Hattingspruit"
+      },
+      {
+        "id": 66,
+        "city": "Charlestown"
+      },
+      {
+        "id": 67,
+        "city": "Newcastle"
+      },
+      {
+        "id": 68,
+        "city": "Hillcrest"
+      },
+      {
+        "id": 69,
+        "city": "Pinetown"
+      },
+      {
+        "id": 70,
+        "city": "Westville"
+      },
+      {
+        "id": 71,
+        "city": "Umhlanga Rocks"
+      },
+      {
+        "id": 72,
+        "city": "Ballito"
+      },
+      {
+        "id": 73,
+        "city": "Margate"
+      },
+      {
+        "id": 74,
+        "city": "Richmond"
+      },
+      {
+        "id": 75,
+        "city": "Ladysmith"
+      },
+      {
+        "id": 76,
+        "city": "Richards Bay"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "province": "Limpopo",
+    "cities": [
+      {
+        "id": 77,
+        "city": "Limpopo"
+      },
+      {
+        "id": 78,
+        "city": "Thohoyandou"
+      },
+      {
+        "id": 79,
+        "city": "Tzaneen"
+      },
+      {
+        "id": 80,
+        "city": "Musina"
+      },
+      {
+        "id": 81,
+        "city": "Lebowakgomo"
+      },
+      {
+        "id": 82,
+        "city": "Polokwane"
+      },
+      {
+        "id": 83,
+        "city": "Bosbokrand"
+      },
+      {
+        "id": 84,
+        "city": "Hoedspruit"
+      },
+      {
+        "id": 85,
+        "city": "Thabazimbi"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "province": "Mpumulanga",
+    "cities": [
+      {
+        "id": 86,
+        "city": "Mpumalanga"
+      },
+      {
+        "id": 87,
+        "city": "Bethal"
+      },
+      {
+        "id": 88,
+        "city": "Middelburg"
+      },
+      {
+        "id": 89,
+        "city": "Volksrust"
+      },
+      {
+        "id": 90,
+        "city": "Nelspruit"
+      },
+      {
+        "id": 91,
+        "city": "Amsterdam"
+      },
+      {
+        "id": 92,
+        "city": "Graskop"
+      },
+      {
+        "id": 93,
+        "city": "Piet Retief"
+      },
+      {
+        "id": 94,
+        "city": "Bethal"
+      },
+      {
+        "id": 95,
+        "city": "Loopspruit"
+      },
+      {
+        "id": 96,
+        "city": "Witbank"
+      },
+      {
+        "id": 97,
+        "city": "Whiteriver"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "province": "North West",
+    "cities": [
+      {
+        "id": 98,
+        "city": "North West"
+      },
+      {
+        "id": 99,
+        "city": "Rustenburg"
+      },
+      {
+        "id": 100,
+        "city": "Potchefstroom"
+      },
+      {
+        "id": 101,
+        "city": "Klerksdorp"
+      },
+      {
+        "id": 102,
+        "city": "Mmabatho"
+      },
+      {
+        "id": 103,
+        "city": "Vryburg"
+      },
+      {
+        "id": 104,
+        "city": "Lichtenburg"
+      },
+      {
+        "id": 105,
+        "city": "Mafikeng"
+      },
+      {
+        "id": 106,
+        "city": "Amalia"
+      },
+      {
+        "id": 107,
+        "city": "Hartbeedpoort"
+      },
+      {
+        "id": 108,
+        "city": "Magaliesburg"
+      },
+      {
+        "id": 109,
+        "city": "Lethabong"
+      },
+      {
+        "id": 110,
+        "city": "Marikana"
+      },
+      {
+        "id": 1101,
+        "city": "Zeerust"
+      },
+      {
+        "id": 112,
+        "city": "Wolmaransstad"
+      },
+      {
+        "id": 113,
+        "city": "Bloemhof"
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "province": "Northern Cape",
+    "cities": [
+      {
+        "id": 114,
+        "city": "Northern Cape"
+      },
+      {
+        "id": 115,
+        "city": "Upington"
+      },
+      {
+        "id": 116,
+        "city": "De Aar"
+      },
+      {
+        "id": 117,
+        "city": "Kimberley"
+      },
+      {
+        "id": 118,
+        "city": "Hartswater"
+      },
+      {
+        "id": 119,
+        "city": "Pofadder"
+      },
+      {
+        "id": 120,
+        "city": "Alexander Bay"
+      },
+      {
+        "id": 121,
+        "city": "Port Nolloth"
+      },
+      {
+        "id": 122,
+        "city": "Richmond"
+      },
+      {
+        "id": 123,
+        "city": "Victoria West"
+      },
+      {
+        "id": 124,
+        "city": "Hanover"
+      },
+      {
+        "id": 125,
+        "city": "Springbok"
+      },
+      {
+        "id": 126,
+        "city": "Vosburg"
+      },
+      {
+        "id": 127,
+        "city": "Vanderkloof"
+      },
+      {
+        "id": 128,
+        "city": "Noupoort"
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "province": "Western Cape",
+    "cities": [
+      {
+        "id": 129,
+        "city": "Western Cape"
+      },
+      {
+        "id": 130,
+        "city": "George"
+      },
+      {
+        "id": 131,
+        "city": "Paarl"
+      },
+      {
+        "id": 132,
+        "city": "Worcester"
+      },
+      {
+        "id": 133,
+        "city": "Cape Town"
+      },
+      {
+        "id": 134,
+        "city": "Oudtshoorn"
+      },
+      {
+        "id": 135,
+        "city": "Mossel Bay"
+      },
+      {
+        "id": 136,
+        "city": "Knysna"
+      },
+      {
+        "id": 137,
+        "city": "Kuilsrivier"
+      },
+      {
+        "id": 138,
+        "city": "Beaufort West"
+      },
+      {
+        "id": 139,
+        "city": "Vredenburg"
+      },
+      {
+        "id": 140,
+        "city": "Malmesbury"
+      },
+      {
+        "id": 141,
+        "city": "Hermanus"
+      },
+      {
+        "id": 142,
+        "city": "Parow"
+      },
+      {
+        "id": 143,
+        "city": "Goodwood"
+      },
+      {
+        "id": 144,
+        "city": "Elsies River"
+      },
+      {
+        "id": 145,
+        "city": "Atlantis"
+      },
+      {
+        "id": 146,
+        "city": "Mitchell's Plain"
+      },
+      {
+        "id": 147,
+        "city": "Somerset West"
+      },
+      {
+        "id": 148,
+        "city": "Strand"
+      },
+      {
+        "id": 149,
+        "city": "Observatory"
+      },
+      {
+        "id": 150,
+        "city": "Milnerton"
+      },
+      {
+        "id": 151,
+        "city": "Durbanville"
+      },
+      {
+        "id": 152,
+        "city": "Plattekloof"
+      },
+      {
+        "id": 153,
+        "city": "Bellville"
+      },
+      {
+        "id": 154,
+        "city": "Fish Hoek"
+      },
+      {
+        "id": 155,
+        "city": "Langebaan"
+      },
+      {
+        "id": 156,
+        "city": "Elandsbay"
+      },
+      {
+        "id": 157,
+        "city": "Hout Bay"
+      },
+      {
+        "id": 158,
+        "city": "Simon's Town"
+      },
+      {
+        "id": 159,
+        "city": "Ceres"
+      },
+      {
+        "id": 160,
+        "city": "Franschoek"
+      },
+      {
+        "id": 161,
+        "city": "Kleinmond"
+      }
+    ]
+  }
+]

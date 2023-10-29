@@ -1,0 +1,120 @@
+
+/* CHAT PAGE */
+.chat-page {
+
+}
+
+.chat-page .content {
+  margin: 0 auto;
+
+  width: 90%;
+}
+
+
+.chat-page .content .chat-container {
+
+
+
+}
+
+.chat-page .content .chat-container img{
+  height: 50px;
+}
+
+
+.chat-page .content .chat-container .speech-bubble-buyer {
+
+  position: relative;
+  top: -3rem;
+  left: 4rem;
+  background-color:var(--primary-light-blue);
+  min-height: 45px;
+  max-width: 70%;
+  padding: 13px;
+  border-radius: 0 1rem 1rem 1rem;
+  margin-bottom: 1rem;
+  word-wrap: break-word;
+}
+
+.chat-page .content .chat-container .speech-bubble-buyer p {
+
+  font-size: .9rem;
+  line-height: 130%;
+  width: 95%;
+
+  margin: 0 auto;
+  color: #fff;
+
+ 
+}
+
+.chat-page .content .chat-container .speech-bubble-user {
+  
+  position: relative;
+  margin-left: auto; 
+  margin-right: 0;
+  background-color: var(--dark-text-color);
+  min-height: 45px;
+
+  border-radius: 1rem 0rem 1rem 1rem;  
+  max-width: 70%;
+  padding: 13px;
+  margin-bottom: 1rem;
+  word-wrap: break-word;
+  
+}
+
+
+.chat-page .content .chat-container .speech-bubble-user p {
+  font-size: .9rem;
+  line-height: 130%;
+  width: 95%;
+
+  margin: 0 auto;
+  color: #fff;
+
+/* 
+  background-color: red; */
+}
+
+.chat-page .content .message-send-container {
+
+}
+
+.chat-page .content .message-send-container .message-form {
+
+}
+
+.chat-page .content .message-send-container .message-form .form-group {
+
+  display: flex;
+  align-items: center;
+
+  
+}
+
+.chat-page .content .message-send-container .message-form .form-group .form-control {
+  height: 50px;
+  margin-right: 1rem;
+  /* border: none;
+  border-radius: 0;
+  border-bottom: 1px solid var(--grey-input-border); */
+  font-size: var(--paragraph-size-mobile);
+  overflow-wrap: break-word;
+  border-radius:3px;
+  border: 1px solid var(--grey-input-border);
+}
+
+.chat-page .content .message-send-container .message-form .form-group .send-message-btn {
+   padding: 12px;
+
+  font-size: var(--button-text-size-mobile);
+  letter-spacing: var(--small-letter-spacing);
+  border-radius:3px;
+  background-color: var(--primary-light-blue);
+  border: none;
+  width:30%;
+    height: 50px;
+  color: #fff;
+  border: none;
+}

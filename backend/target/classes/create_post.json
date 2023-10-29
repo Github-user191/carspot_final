@@ -1,0 +1,16 @@
+{
+
+  "title":"This is a test post",
+  "description": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaqueoluptas sit aspernatur",
+  "brand":"Audi",
+  "model":"A3",
+  "price":"20304",
+  "color":"Black",
+  "kilometers":"9999",
+  "bodyType":"Coupe",
+  "fuelType":"Petrol",
+  "transmission":"Automatic",
+  "year":"2022",
+  "province":"province 1",
+  "city":"city 1"
+}

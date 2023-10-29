@@ -1,0 +1,84 @@
+version: '3.7'
+
+# Define services
+services:
+  carspot-backend:
+    build:
+      context: ../../backend 
+    ports:
+      - "9090:9090" 
+    restart: always
+    depends_on:
+      - carspot-db
+    environment: # Pass environment variables to the service
+      SPRING_DATASOURCE_URL: ${SPRING_DATASOURCE_URL}
+      SPRING_DATASOURCE_USERNAME: ${MYSQL_DB_USER}
+      SPRING_DATASOURCE_PASSWORD: ${MYSQL_DB_PASSWORD}
+      SPRING_JPA_HIBERNATE_DDL-AUTO: update
+      SPRING_MAIL_USERNAME: ${SPRING_MAIL_USERNAME}
+      SPRING_MAIL_PASSWORD: ${SPRING_MAIL_PASSWORD}
+      CLOUD_AWS_CREDENTIALS_ACCESS-KEY: ${CLOUD_AWS_CREDENTIALS_ACCESS_KEY}
+      CLOUD_AWS_CREDENTIALS_SECRET-KEY: ${CLOUD_AWS_CREDENTIALS_SECRET_KEY}
+      AMAZON_S3_BUCKET-NAME: ${AMAZON_S3_BUCKET_NAME}
+      AMAZON_S3_ENDPOINT: ${AMAZON_S3_ENDPOINT}
+
+    networks: # Networks to join (Services on the same network can communicate with each other using their name)
+      - backend
+      - frontend
+
+  # Frontend Service
+  carspot-frontend:
+    build:
+      context: ../../frontend 
+        #ports:
+        #- "80:80" # Map the exposed port 80 on the container to port 9090 on the host machine
+    restart: always
+    depends_on:
+      - carspot-backend
+    volumes:
+      # bind mount - mount dir from host to container
+      # - ./public_html:/public_html
+      - ./conf.d:/etc/nginx/conf.d
+      - ./dhparam:/etc/nginx/dhparam
+      - ./certbot/data:/usr/share/nginx/html/letsencrypt
+      - ./certbot/conf/:/etc/nginx/ssl
+    networks:
+      - frontend
+    #command: "sh -c 'while :; do sleep 6h & wait $${!}; nginx -s reload; done & nginx -g \"daemon off;\"'"
+
+  certbot:
+    image: certbot/certbot:amd64-v2.0.0
+    volumes:
+      - ./certbot/data:/usr/share/nginx/html/letsencrypt
+      - ./certbot/conf/:/etc/letsencrypt
+      - ./certbot/logs:/var/log/letsencrypt
+    depends_on:
+      - carspot-frontend
+        #command:
+        #certonly --webroot --webroot-path=/usr/share/nginx/html/letsencrypt --email admin@gmail.com --agree-tos --no-eff-email -d carspot.live
+    entrypoint: "/bin/sh -c 'trap exit TERM; while :; do certbot renew; sleep 12h & wait $${!}; done;'"
+
+  # Database Service (Mysql)
+  carspot-db:
+    image: mysql:5.7
+    ports:
+      - "3308:3306"
+    restart: always
+    environment:
+      MYSQL_ROOT_USER: ${MYSQL_DB_USER}
+      MYSQL_ROOT_PASSWORD: ${MYSQL_DB_PASSWORD}
+      MYSQL_DATABASE: ${MYSQL_DB_NAME}
+    volumes:
+      - carspot-db-volume:/var/lib/mysql
+    networks:
+      - backend
+
+# Volumes
+volumes:
+  carspot-db-volume:
+  carspot-frontend-volume:
+
+# Networks to be created to facilitate communication between containers
+networks:
+  backend:
+  frontend:

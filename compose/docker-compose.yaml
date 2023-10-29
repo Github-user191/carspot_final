@@ -1,0 +1,71 @@
+version: '3.7'
+
+# Define services
+services:
+  # App backend service
+  carspot-backend:
+    #image: dockerdemo786/carspot-backend:latest
+    # # Configuration for building the docker image for the backend service
+    build:
+      context: ../backend # Use an image built from the specified dockerfile in the `polling-app-server` directory.
+      dockerfile: Dockerfile
+    ports:
+      - 9090:9090 # Forward the exposed port 9090 on the container to port 9090 on the host machine
+    restart: always
+    depends_on: 
+      - carspot-db # This service depends on mysql. Start that first.
+    environment: # Pass environment variables to the service
+      SPRING_DATASOURCE_URL: ${SPRING_DATASOURCE_URL}
+      SPRING_DATASOURCE_USERNAME: ${SPRING_DATASOURCE_USERNAME}
+      SPRING_DATASOURCE_PASSWORD: ${SPRING_DATASOURCE_PASSWORD}
+      SPRING_MAIL_USERNAME: ${SPRING_MAIL_USERNAME}
+      SPRING_MAIL_PASSWORD: ${SPRING_MAIL_PASSWORD}
+      AZURE_STORAGE_CONTAINER_NAME: ${AZURE_STORAGE_CONTAINER_NAME}
+      AZURE_STORAGE_CONNECTION_STRING: ${AZURE_STORAGE_CONNECTION_STRING}
+      # ADD AZURE STUFF HERE..
+      # USE .env for PWs
+    networks: # Networks to join (Services on the same network can communicate with each other using their name)
+      - backend
+      - frontend
+
+  # Frontend Service 
+  carspot-frontend:
+    # For using image on Dockerhub
+    #image: dockerdemo786/carspot-frontend:latest
+    build: #For using local dockerfile
+      context: ../frontend # Use an image built from the specified dockerfile in the `polling-app-client` directory.
+      dockerfile: Dockerfile
+    #   # args:
+    #   #   REACT_APP_API_BASE_URL: http://127.0.0.1:8080
+    ports:
+      - 3000:3000 # Map the exposed port 80 on the container to port 3000 on the host machine
+    restart: always
+    depends_on:
+      - carspot-backend
+    networks:
+      - frontend
+
+  # Database Service (Mysql)
+  carspot-db:
+    image: mysql:5.7
+    ports:
+      - "3307:3306"
+    restart: always
+    environment:
+      MYSQL_ROOT_USER: ${MYSQL_DB_USER}
+      MYSQL_ROOT_PASSWORD: ${SPRING_DATASOURCE_PASSWORD}
+      MYSQL_DATABASE: ${SPRING_DATASOURCE_DATABASE}
+    volumes:
+      - carspot-db-volume:/var/lib/mysql
+    networks:
+      - backend
+    
+# Volumes
+volumes:
+  carspot-db-volume:
+  carspot-frontend-volume:
+
+# Networks to be created to facilitate communication between containers
+networks:
+  backend:
+  frontend:

@@ -1,0 +1,1224 @@
+[
+  {
+    "id": 0,
+    "brand": "Bmw",
+    "models": [
+      {
+        "id": 0,
+        "model": "1 Series"
+      },
+      {
+        "id": 1,
+        "model": "3 Series"
+      },
+      {
+        "id": 2,
+        "model": "4 Series"
+      },
+      {
+        "id": 3,
+        "model": "M2"
+      },
+      {
+        "id": 4,
+        "model": "M3"
+      },
+      {
+        "id": 5,
+        "model": "M4"
+      },
+      {
+        "id": 6,
+        "model": "M5"
+      },
+      {
+        "id": 7,
+        "model": "M6"
+      },
+      {
+        "id": 8,
+        "model": "M8"
+      },
+      {
+        "id": 9,
+        "model": "Z4"
+      },
+      {
+        "id": 10,
+        "model": "X3"
+      },
+      {
+        "id": 11,
+        "model": "X5"
+      },
+      {
+        "id": 12,
+        "model": "X6"
+      },
+      {
+        "id": 13,
+        "model": "X7"
+      },
+      {
+        "id": 14,
+        "model": "i8"
+      }
+    ]
+  },
+  {
+    "id": 1,
+    "brand": "Audi",
+    "models": [
+      {
+        "id": 0,
+        "model": "A3"
+      },
+      {
+        "id": 1,
+        "model": "A4"
+      },
+      {
+        "id": 2,
+        "model": "S3"
+      },
+      {
+        "id": 3,
+        "model": "S6"
+      },
+      {
+        "id": 4,
+        "model": "S8"
+      },
+      {
+        "id": 5,
+        "model": "TT"
+      },
+      {
+        "id": 6,
+        "model": "Q7"
+      },
+      {
+        "id": 7,
+        "model": "RS3"
+      },
+      {
+        "id": 8,
+        "model": "RS4"
+      },
+      {
+        "id": 9,
+        "model": "A5"
+      },
+      {
+        "id": 10,
+        "model": "A5"
+      },
+      {
+        "id": 11,
+        "model": "RSQ8"
+      },
+      {
+        "id": 12,
+        "model": "R8"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "brand": "Toyota",
+    "models": [
+      {
+        "id": 0,
+        "model": "Hilux"
+      },
+      {
+        "id": 1,
+        "model": "Fortuner"
+      },
+      {
+        "id": 2,
+        "model": "Land Cruiser"
+      },
+      {
+        "id": 3,
+        "model": "RAV4"
+      },
+      {
+        "id": 4,
+        "model": "Yaris"
+      },
+      {
+        "id": 5,
+        "model": "Corolla"
+      },
+      {
+        "id": 6,
+        "model": "Etios"
+      },
+      {
+        "id": 7,
+        "model": "Avanza"
+      },
+      {
+        "id": 8,
+        "model": "Aygo"
+      },
+      {
+        "id": 9,
+        "model": "Rush"
+      },
+      {
+        "id": 10,
+        "model": "Prado"
+      },
+      {
+        "id": 11,
+        "model": "Auris"
+      },
+      {
+        "id": 12,
+        "model": "Quantum"
+      },
+      {
+        "id": 13,
+        "model": "FJ-Cruiser"
+      },
+      {
+        "id": 14,
+        "model": "Camry"
+      },
+      {
+        "id": 15,
+        "model": "Tazz"
+      },
+      {
+        "id": 16,
+        "model": "Conquest"
+      },
+      {
+        "id": 17,
+        "model": "Avensis"
+      },
+      {
+        "id": 18,
+        "model": "Supra"
+      },
+      {
+        "id": 19,
+        "model": "86"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "brand": "Mercedes Benz",
+    "models": [
+      {
+        "id": 0,
+        "model": "C-Class"
+      },
+      {
+        "id": 1,
+        "model": "E-Class"
+      },
+      {
+        "id": 2,
+        "model": "A-Class"
+      },
+      {
+        "id": 3,
+        "model": "G-Class"
+      },
+      {
+        "id": 4,
+        "model": "S-Class"
+      },
+      {
+        "id": 5,
+        "model": "SLK 55"
+      },
+      {
+        "id": 6,
+        "model": "SLS"
+      },
+      {
+        "id": 7,
+        "model": "GLE"
+      },
+      {
+        "id": 8,
+        "model": "CLK"
+      },
+      {
+        "id": 9,
+        "model": "CLA"
+      },
+      {
+        "id": 10,
+        "model": "GLC"
+      },
+      {
+        "id": 11,
+        "model": "G-Class"
+      },
+      {
+        "id": 12,
+        "model": "AMG GT R"
+      },
+      {
+        "id": 13,
+        "model": "ML-350i"
+      },
+      {
+        "id": 14,
+        "model": "Viano"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "brand": "Honda",
+    "models": [
+      {
+        "id": 0,
+        "model": "Ballade"
+      },
+      {
+        "id": 1,
+        "model": "Civic"
+      },
+      {
+        "id": 2,
+        "model": "Jazz"
+      },
+      {
+        "id": 3,
+        "model": "CR-V"
+      },
+      {
+        "id": 4,
+        "model": "FR-V"
+      },
+      {
+        "id": 5,
+        "model": "Accord"
+      },
+      {
+        "id": 6,
+        "model": "Prelude"
+      },
+      {
+        "id": 7,
+        "model": "Brio"
+      },
+      {
+        "id": 8,
+        "model": "Amaze"
+      },
+      {
+        "id": 9,
+        "model": "Fit"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "brand": "Hyundai",
+    "models": [
+      {
+        "id": 0,
+        "model": "Elantra"
+      },
+      {
+        "id": 1,
+        "model": "Getz"
+      },
+      {
+        "id": 2,
+        "model": "Creta"
+      },
+      {
+        "id": 3,
+        "model": "Accent"
+      },
+      {
+        "id": 4,
+        "model": "i10"
+      },
+      {
+        "id": 5,
+        "model": "i20"
+      },
+      {
+        "id": 6,
+        "model": "i30"
+      },
+      {
+        "id": 7,
+        "model": "Kona"
+      },
+      {
+        "id": 8,
+        "model": "Atos"
+      },
+      {
+        "id": 9,
+        "model": "Tucson"
+      },
+      {
+        "id": 10,
+        "model": "ix35"
+      },
+      {
+        "id": 11,
+        "model": "H100"
+      },
+      {
+        "id": 12,
+        "model": "Veloster"
+      },
+      {
+        "id": 13,
+        "model": "Santa Fe"
+      },
+      {
+        "id": 14,
+        "model": "Staria"
+      },
+      {
+        "id": 15,
+        "model": "Palisade"
+      },
+      {
+        "id": 16,
+        "model": "Sonata"
+      },
+      {
+        "id": 17,
+        "model": "Tiburon"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "brand": "Ford",
+    "models": [
+      {
+        "id": 0,
+        "model": "Fiesta"
+      },
+      {
+        "id": 1,
+        "model": "Focus"
+      },
+      {
+        "id": 2,
+        "model": "Bantam"
+      },
+      {
+        "id": 3,
+        "model": "Ranger"
+      },
+      {
+        "id": 4,
+        "model": "Everest"
+      },
+      {
+        "id": 5,
+        "model": "EcoSport"
+      },
+      {
+        "id": 6,
+        "model": "Figo"
+      },
+      {
+        "id": 7,
+        "model": "Kuga"
+      },
+      {
+        "id": 8,
+        "model": "Sierra"
+      },
+      {
+        "id": 9,
+        "model": "Ka"
+      },
+      {
+        "id": 10,
+        "model": "Ikon"
+      },
+      {
+        "id": 11,
+        "model": "Escort"
+      },
+      {
+        "id": 12,
+        "model": "Mustang"
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "brand": "Tata",
+    "models": [
+      {
+        "id": 0,
+        "model": "Ultra"
+      },
+      {
+        "id": 1,
+        "model": "LPT"
+      },
+      {
+        "id": 2,
+        "model": "Xenon"
+      },
+      {
+        "id": 3,
+        "model": "Bolt"
+      },
+      {
+        "id": 4,
+        "model": "Super Ace"
+      },
+      {
+        "id": 5,
+        "model": "Indica"
+      },
+      {
+        "id": 6,
+        "model": "Telcoline"
+      },
+      {
+        "id": 7,
+        "model": "Indigo"
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "brand": "Nissan",
+    "models": [
+      {
+        "id": 0,
+        "model": "Qashqai"
+      },
+      {
+        "id": 1,
+        "model": "Juke"
+      },
+      {
+        "id": 2,
+        "model": "NP200"
+      },
+      {
+        "id": 3,
+        "model": "Pathfinder"
+      },
+      {
+        "id": 4,
+        "model": "Micra"
+      },
+      {
+        "id": 5,
+        "model": "Almera"
+      },
+      {
+        "id": 6,
+        "model": "Navara"
+      },
+      {
+        "id": 7,
+        "model": "X-Trail"
+      },
+      {
+        "id": 8,
+        "model": "Hardbody"
+      },
+      {
+        "id": 9,
+        "model": "Interstar"
+      },
+      {
+        "id": 10,
+        "model": "Magnite"
+      },
+      {
+        "id": 11,
+        "model": "1400"
+      },
+      {
+        "id": 12,
+        "model": "Tiida"
+      },
+      {
+        "id": 13,
+        "model": "GT-R"
+      },
+      {
+        "id": 14,
+        "model": "370Z"
+      },
+      {
+        "id": 15,
+        "model": "Sentra"
+      },
+      {
+        "id": 16,
+        "model": "Murano"
+      },
+      {
+        "id": 17,
+        "model": "Maxima"
+      },
+      {
+        "id": 18,
+        "model": "Patrol"
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "brand": "Fiat",
+    "models": [
+      {
+        "id": 0,
+        "model": "500"
+      },
+      {
+        "id": 1,
+        "model": "Tipo"
+      },
+      {
+        "id": 2,
+        "model": "Florino"
+      },
+      {
+        "id": 3,
+        "model": "Strada"
+      },
+      {
+        "id": 4,
+        "model": "Palio"
+      },
+      {
+        "id": 5,
+        "model": "Panda"
+      },
+      {
+        "id": 6,
+        "model": "Siena"
+      },
+      {
+        "id": 7,
+        "model": "Punto"
+      },
+      {
+        "id": 8,
+        "model": "Fullback"
+      },
+      {
+        "id": 9,
+        "model": "Multipla"
+      },
+      {
+        "id": 10,
+        "model": "Doblo"
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "brand": "Suzuki",
+    "models": [
+      {
+        "id": 0,
+        "model": "Vitara Brezza"
+      },
+      {
+        "id": 1,
+        "model": "Swift"
+      },
+      {
+        "id": 2,
+        "model": "Baleno"
+      },
+      {
+        "id": 3,
+        "model": "Splash"
+      },
+      {
+        "id": 4,
+        "model": "Celerio"
+      },
+      {
+        "id": 5,
+        "model": "Dzire"
+      },
+      {
+        "id": 6,
+        "model": "Super Carry"
+      },
+      {
+        "id": 7,
+        "model": "Ignis"
+      },
+      {
+        "id": 8,
+        "model": "SX4"
+      },
+      {
+        "id": 9,
+        "model": "S-Presso"
+      },
+      {
+        "id": 10,
+        "model": "Ertiga"
+      },
+      {
+        "id": 11,
+        "model": "Jimny"
+      },
+      {
+        "id": 12,
+        "model": "Ciaz"
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "brand": "Renault",
+    "models": [
+      {
+        "id": 0,
+        "model": "Duster"
+      },
+      {
+        "id": 1,
+        "model": "Clio"
+      },
+      {
+        "id": 2,
+        "model": "Kiger"
+      },
+      {
+        "id": 3,
+        "model": "Kwid"
+      },
+      {
+        "id": 4,
+        "model": "Sandero"
+      },
+      {
+        "id": 5,
+        "model": "Koleos"
+      },
+      {
+        "id": 6,
+        "model": "Captur"
+      },
+      {
+        "id": 7,
+        "model": "Kadjar"
+      },
+      {
+        "id": 8,
+        "model": "Triber"
+      },
+      {
+        "id": 9,
+        "model": "Megane"
+      },
+      {
+        "id": 10,
+        "model": "Triber"
+      },
+      {
+        "id": 11,
+        "model": "Fluence"
+      },
+      {
+        "id": 12,
+        "model": "Grand Scenic"
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "brand": "Jaguar",
+    "models": [
+      {
+        "id": 0,
+        "model": "XJ"
+      },
+      {
+        "id": 1,
+        "model": "XE"
+      },
+      {
+        "id": 2,
+        "model": "XF"
+      },
+      {
+        "id": 3,
+        "model": "F-Type"
+      },
+      {
+        "id": 4,
+        "model": "S-Type"
+      },
+      {
+        "id": 5,
+        "model": "F-Pace"
+      },
+      {
+        "id": 6,
+        "model": "E-Pace"
+      },
+      {
+        "id": 7,
+        "model": "X-Pace"
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "brand": "Kia",
+    "models": [
+      {
+        "id": 0,
+        "model": "Rio"
+      },
+      {
+        "id": 1,
+        "model": "Sportage"
+      },
+      {
+        "id": 2,
+        "model": "Picanto"
+      },
+      {
+        "id": 3,
+        "model": "Sorento"
+      },
+      {
+        "id": 4,
+        "model": "Sedona"
+      },
+      {
+        "id": 5,
+        "model": "Cerato"
+      },
+      {
+        "id": 6,
+        "model": "Seltos"
+      },
+      {
+        "id": 7,
+        "model": "Sonet"
+      },
+      {
+        "id": 8,
+        "model": "K-Series"
+      },
+      {
+        "id": 9,
+        "model": "Soul"
+      },
+      {
+        "id": 10,
+        "model": "Pegas"
+      },
+      {
+        "id": 11,
+        "model": "Carinval"
+      },
+      {
+        "id": 12,
+        "model": "Stinger"
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "brand": "Volkswagen",
+    "models": [
+      {
+        "id": 0,
+        "model": "Polo"
+      },
+      {
+        "id": 1,
+        "model": "Polo Vivo"
+      },
+      {
+        "id": 2,
+        "model": "Polo GP"
+      },
+      {
+        "id": 3,
+        "model": "Polo TSI"
+      },
+      {
+        "id": 4,
+        "model": "GTI"
+      },
+      {
+        "id": 5,
+        "model": "R"
+      },
+      {
+        "id": 6,
+        "model": "Tiguan"
+      },
+      {
+        "id": 7,
+        "model": "T-Roc"
+      },
+      {
+        "id": 8,
+        "model": "Amarok"
+      },
+      {
+        "id": 9,
+        "model": "Jetta"
+      },
+      {
+        "id": 10,
+        "model": "Caddy"
+      },
+      {
+        "id": 11,
+        "model": "Touareg"
+      },
+      {
+        "id": 12,
+        "model": "T-Cross"
+      },
+      {
+        "id": 13,
+        "model": "Transporter"
+      },
+      {
+        "id": 14,
+        "model": "Taigo"
+      },
+      {
+        "id": 15,
+        "model": "Caravelle"
+      },
+      {
+        "id": 16,
+        "model": "Microbus"
+      },
+      {
+        "id": 17,
+        "model": "City"
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "brand": "Isuzu",
+    "models": [
+      {
+        "id": 0,
+        "model": "KB 250 D-Teq"
+      },
+      {
+        "id": 1,
+        "model": "KB 300 D-Teq"
+      },
+      {
+        "id": 2,
+        "model": "D-Max"
+      },
+      {
+        "id": 3,
+        "model": "NPR"
+      },
+      {
+        "id": 4,
+        "model": "Mu-x"
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "brand": "Alfa Romeo",
+    "models": [
+      {
+        "id": 0,
+        "model": "Giulia"
+      },
+      {
+        "id": 1,
+        "model": "Giulietta"
+      },
+      {
+        "id": 2,
+        "model": "155"
+      },
+      {
+        "id": 3,
+        "model": "159"
+      },
+      {
+        "id": 4,
+        "model": "GTV"
+      },
+      {
+        "id": 5,
+        "model": "4C"
+      },
+      {
+        "id": 6,
+        "model": "Stelvio"
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "brand": "Aston Martin",
+    "models": [
+      {
+        "id": 0,
+        "model": "DB9"
+      },
+      {
+        "id": 1,
+        "model": "DBX"
+      },
+      {
+        "id": 2,
+        "model": "DB11"
+      },
+      {
+        "id": 3,
+        "model": "Vantage Roadster"
+      },
+      {
+        "id": 4,
+        "model": "Vantage S"
+      },
+      {
+        "id": 5,
+        "model": "Vanguish"
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "brand": "Lexus",
+    "models": [
+      {
+        "id": 0,
+        "model": "LX"
+      },
+      {
+        "id": 1,
+        "model": "LS"
+      },
+      {
+        "id": 2,
+        "model": "UX"
+      },
+      {
+        "id": 3,
+        "model": "NX"
+      },
+      {
+        "id": 4,
+        "model": "IS"
+      },
+      {
+        "id": 5,
+        "model": "RX"
+      },
+      {
+        "id": 6,
+        "model": "ES"
+      },
+      {
+        "id": 7,
+        "model": "GS"
+      }
+    ]
+  },
+  {
+    "id": 19,
+    "brand": "Mitsubishi",
+    "models": [
+      {
+        "id": 0,
+        "model": "Pajero"
+      },
+      {
+        "id": 1,
+        "model": "Pajero Sport"
+      },
+      {
+        "id": 2,
+        "model": "Triton"
+      },
+      {
+        "id": 3,
+        "model": "Eclipse Cross"
+      },
+      {
+        "id": 4,
+        "model": "ASX"
+      },
+      {
+        "id": 5,
+        "model": "Outlander"
+      },
+      {
+        "id": 6,
+        "model": "Xpander"
+      },
+      {
+        "id": 7,
+        "model": "Colt"
+      }
+    ]
+  },
+  {
+    "id": 20,
+    "brand": "Chevrolet",
+    "models": [
+      {
+        "id": 0,
+        "model": "Trailblazer"
+      },
+      {
+        "id": 1,
+        "model": "Lumina"
+      },
+      {
+        "id": 2,
+        "model": "Utility"
+      },
+      {
+        "id": 3,
+        "model": "Captiva"
+      },
+      {
+        "id": 4,
+        "model": "Cruze"
+      },
+      {
+        "id": 5,
+        "model": "Sonic"
+      },
+      {
+        "id": 6,
+        "model": "Spark"
+      },
+      {
+        "id": 7,
+        "model": "Spark lite"
+      },
+      {
+        "id": 8,
+        "model": "Orlando"
+      },
+      {
+        "id": 9,
+        "model": "Aveo"
+      }
+    ]
+  },
+  {
+    "id": 21,
+    "brand": "Mazda",
+    "models": [
+      {
+        "id": 0,
+        "model": "CX-3"
+      },
+      {
+        "id": 1,
+        "model": "CX-30"
+      },
+      {
+        "id": 2,
+        "model": "CX-5"
+      },
+      {
+        "id": 3,
+        "model": "MX-5"
+      },
+      {
+        "id": 4,
+        "model": "2"
+      },
+      {
+        "id": 5,
+        "model": "3"
+      },
+      {
+        "id": 6,
+        "model": "6"
+      },
+      {
+        "id": 7,
+        "model": "BT-50"
+      }
+    ]
+  },
+  {
+    "id": 22,
+    "brand": "Opel",
+    "models": [
+      {
+        "id": 0,
+        "model": "Adam"
+      },
+      {
+        "id": 1,
+        "model": "Astra"
+      },
+      {
+        "id": 2,
+        "model": "Utility"
+      },
+      {
+        "id": 3,
+        "model": "Corsa"
+      },
+      {
+        "id": 4,
+        "model": "Kadett"
+      },
+      {
+        "id": 5,
+        "model": "Crossland"
+      },
+      {
+        "id": 6,
+        "model": "Grandland"
+      },
+      {
+        "id": 7,
+        "model": "Adam"
+      },
+      {
+        "id": 8,
+        "model": "Mokka"
+      },
+      {
+        "id": 9,
+        "model": "Tigra"
+      },
+      {
+        "id": 10,
+        "model": "Zafira"
+      },
+      {
+        "id": 11,
+        "model": "Combo"
+      }
+    ]
+  }
+]
