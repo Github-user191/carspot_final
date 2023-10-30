@@ -170,7 +170,7 @@ public class AuthController {
 
 
     private String applicationURL(HttpServletRequest request) {
-        return "https://carspot.live" + request.getContextPath();
+        return "https://carspot.quest" + request.getContextPath();
     }
 
 

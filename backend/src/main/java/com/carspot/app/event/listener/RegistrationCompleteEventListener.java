@@ -33,7 +33,7 @@ public class RegistrationCompleteEventListener implements ApplicationListener<Re
         String token = UUID.randomUUID().toString();
         confirmationTokenService.createConfirmationToken(user, token);
 
-        String url = "https://carspot.live/confirm-email/" + token;
+        String url = "https://carspot.quest/confirm-email/" + token;
         emailService.sendConfirmationEmail(user.getEmailAddress(), url);
         //log.info("Click the link to verify your account: {}", url);
     }
