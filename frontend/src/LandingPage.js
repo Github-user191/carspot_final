@@ -37,11 +37,10 @@ const Landing = () => {
           <div className="header">
             {/* <h1 className="heading">Find your <span style={{color: "#fff"}}>dream car</span></h1> */}
             <h1 className="heading">
-		Your second-hand marketplace for motor vehicles
+            Unlocking Affordable Adventures, One Pre-Owned Vehicle at a Time!
             </h1>
             <p className="info mt-3">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam,
-              purus sit amet luctus.
+            Discover a world of quality and affordability on our second-hand vehicle website. Explore a wide selection of pre-owned vehicles today.
             </p>
 
     

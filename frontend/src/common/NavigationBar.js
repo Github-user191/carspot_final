@@ -5,7 +5,6 @@ import {MdOutlineLogout, MdLibraryAdd, MdLogin, MdLogout} from "react-icons/md"
 import {FiLogIn, FiLogOut} from "react-icons/fi"
 import defaultAvatar from "../assets/user-profile.svg";
 import logoLight from "../assets/logo-light.svg";
-import logoDark from "../assets/logo.svg";
 import {Link, useNavigate} from "react-router-dom";
 import AuthenticationService from "../services/AuthenticationService";
 import SearchBarComponent from "./SearchBarComponent";

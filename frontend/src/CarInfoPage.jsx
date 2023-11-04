@@ -316,7 +316,7 @@ const CarInfoPage = () => {
                                     phoneInfo={postCreatorInfo.postCreatorMobileNumber}
                                     emailIcon={<AiOutlineMail size={16} />}
                                     emailText="Email"
-                                    emailInfo={postCreatorInfo.postCreatorEmailAddress}
+                                    emailInfo="demo@carspot.com"
                                     chatIcon={<BiChat size={16}/>}
                                     chatText="Chat"
                                     chatInfo={`Chat with ${postCreatorInfo.postCreatorFullName.split(" ")[0]}`}

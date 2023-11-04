@@ -35,7 +35,7 @@ const LandingPageStatisticsComponent = () => {
             <div className='col'>
               <div className='statistic'>
                 <AiOutlineStar className="statistic-icon" size={30}/>
-                <h4>500+ 5 star reviews</h4>
+                <h4>100+ 5 star reviews</h4>
                 <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna.
                 </p>

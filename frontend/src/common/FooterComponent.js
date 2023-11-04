@@ -17,12 +17,12 @@ const FooterComponent = () => {
   
             <div className="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4 company-section footer-column-section">
 
-              <h6 className="text-uppercaswe fw-bwold">Carspot</h6>
+              <h6 className="text-uppercaswe fw-bwold">CarSpot</h6>
 
               {/* <img src={logoLight} className="logo-icon" alt="Logo image" /> */}
               <hr id="text-underline-accent" />
               <p>
-                Incididunt velit mollit aliqua culpa elit do elit esse veniam ullamco et. Tempor ut in anim dolor dolore velit. Sit.
+                Discover a world of quality and affordability on our second-hand vehicle website. Explore a wide selection of pre-owned vehicles today.
               </p>
             </div>
 
@@ -32,7 +32,7 @@ const FooterComponent = () => {
               <hr id="text-underline-accent" />
               
   
-                <p style={{wordWrap: "break-word"}}> Incididunt velit mollit aliqua culpa elit do elit esse veniam ullamco et. Tempor ut in anim dolor dolore velit. Sit. </p>
+                <p style={{wordWrap: "break-word"}}> At CarSpot, we're passionate about providing you with a seamless and budget-friendly way to find your ideal pre-owned vehicle. With a commitment to quality, reliability, and customer satisfaction.   </p>
 
 
 
@@ -66,7 +66,7 @@ const FooterComponent = () => {
               <h6 className="text-uppercaswe fw-bwold">Contact</h6>
               <hr id="text-underline-accent" />
               <p>contact@carspot.com</p>
-              <p>+27 73 388 0232</p>
+              <p>+27 73 341 2456</p>
             </div>
         
           </div>
