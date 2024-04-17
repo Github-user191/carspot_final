@@ -169,7 +169,6 @@ const CarInfoPage = () => {
 
                 <div className="car-info-page-right-content">
 
-                    {JSON.stringify(postCreatorInfo)}
                     {userPosts.length > 0 ? <h4>Some of {postCreatorInfo.postCreatorFullName}'s ads</h4> : ""}
                     {userPosts && (
                         userPosts.map(post => {
