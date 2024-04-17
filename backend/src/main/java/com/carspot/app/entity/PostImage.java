@@ -20,6 +20,7 @@ public class PostImage {
         private String id;
 
         @NotNull
+        @Column(length = 400)
         private String imageUrl;
 
         public PostImage(String imageUrl) {

@@ -84,6 +84,9 @@ public class AuthController {
     public ResponseEntity<?> confirmToken(@RequestParam("token") String token) {
         String result = confirmationTokenService.validateConfirmationToken(token);
 
+        User user = new User(1, "John Doe", "johndoe@gmail.com", "0772888222","password!");
+
+
         if(result.equalsIgnoreCase("valid")) {
             return ResponseEntity.ok(new ApiResponse("User Verified Successfully", true));
         }

@@ -37,9 +37,6 @@ public class WatchlistPostServiceImpl implements WatchlistPostService {
         List<WatchlistPost> postIdList = watchlistPostRepository.findAllByUserId(user.getId());
 
         Page<Post> watchlistPostsPage = postRepository.findAllByIdIn(postIdList.stream().map(post -> post.getPostId()).collect(Collectors.toList()), pageable);
-        if (watchlistPostsPage.isEmpty()) {
-            throw new PostNotFoundException("You do not have any Watchlisted Posts.");
-        }
 
 
         return watchlistPostsPage;

@@ -53,11 +53,12 @@ public class User implements Serializable {
     @Enumerated(EnumType.STRING)
     private AuthProvider provider;
 
-    private int totalActivePostCount;
-
-    private int totalPostCount;
-
-    private int totalWatchlistPostCount;
+    @Column(nullable = true)
+    private int totalActivePostCount = 0;
+    @Column(nullable = true)
+    private int totalPostCount  = 0;
+    @Column(nullable = true)
+    private int totalWatchlistPostCount  = 0;
 
     public User(String fullName, String emailAddress, String mobileNumber, String password) {
         this.fullName = fullName;

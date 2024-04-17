@@ -69,7 +69,7 @@ public class PostServiceImpl implements PostService {
             postRepository.save(post);
         });
 
-        if (page.isEmpty()) throw new PostNotFoundException("There are no matching records..");
+        //if (page.isEmpty()) throw new PostNotFoundException("There are no matching records..");
         return page;
     }
 
@@ -85,7 +85,7 @@ public class PostServiceImpl implements PostService {
             postRepository.save(post);
         });
 
-        if (page.isEmpty()) throw new PostNotFoundException("There are no matching records..");
+        //if (page.isEmpty()) throw new PostNotFoundException("There are no matching records..");
 
         return page;
 
@@ -112,7 +112,7 @@ public class PostServiceImpl implements PostService {
             postRepository.save(post);
         });
 
-        if (page.isEmpty()) throw new PostNotFoundException("You do not have any posts..");
+        //if (page.isEmpty()) throw new PostNotFoundException("You do not have any posts..");
         return page;
     }
 
@@ -127,7 +127,7 @@ public class PostServiceImpl implements PostService {
             postRepository.save(post);
         });
 
-        if (page.isEmpty()) throw new PostNotFoundException("You do not have any posts");
+        //if (page.isEmpty()) throw new PostNotFoundException("You do not have any posts");
         return page;
     }
 

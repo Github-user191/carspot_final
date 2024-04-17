@@ -1,5 +1,102 @@
-INSERT INTO carspot.role(`role_id`, `name`)
+INSERT INTO carspotdb.role(`role_id`, `name`)
 VALUES(1, 'ROLE_USER'),
       (2, 'ROLE_ADMIN'),
       (3, 'ROLE_EDITOR');
 
+
+
+# INSERT INTO carspotdb.user(`id`, `date_joined`, `email_address`, `email_verified`, `full_name`, `mobile_number`, `password`) VALUES
+#     (1, NOW(), 'johndoe@gmail.com',1,'John Doe', '0773339222','password!'),
+#     (2, NOW(), 'annemichael@gmail.com',1, 'Anne Michael','0872223333', 'password!'),
+#     (3, NOW(), 'sarahyoung@gmail.com', 1, 'Sarah Young', '0723339992', 'password!');
+
+INSERT INTO carspotdb.user_roles(`user_id`, `role_id`)
+VALUES(1, 1),
+      (2, 2),
+      (3, 3);
+
+
+INSERT INTO carspotdb.post (id, active, body_type, city, color, created_at, description, expired_at, fuel_type, kilometers, model, post_creator_email, post_creator_name, price, province, title, transmission, year, user_id, brand) VALUES
+    (1, 1, 'Sedan', 'New York', 'Black', NOW(), 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', DATE_ADD(NOW(), INTERVAL 3 MONTH), 'Gasoline', 50000, 'Toyota Camry', 'johndoe@gmail.com', 'John Doe', 15000, 'New York', 'Toyota Camry for sale', 'Automatic', 2018, 1, 'Toyota'),
+    (2, 1, 'SUV', 'Los Angeles', 'White', NOW(), 'Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed eu arcu a felis tristique consequat nec eget elit.', DATE_ADD(NOW(), INTERVAL 3 MONTH), 'Diesel', 70000, 'Ford Explorer', 'annemichael@gmail.com', 'Anne Michael', 20000, 'California', 'Ford Explorer for sale', 'Automatic', 2017, 2, 'Ford'),
+    (3, 1, 'Hatchback', 'Chicago', 'Blue', NOW(), 'Phasellus hendrerit leo a lacinia tempor.', DATE_ADD(NOW(), INTERVAL 3 MONTH), 'Gasoline', 60000, 'Honda Civic', 'annemichael@gmail.com', 'Anne Michael', 12000, 'Illinois', 'Honda Civic for sale', 'Manual', 2016, 2, 'Honda'),
+    (4, 1, 'Sedan', 'Miami', 'Red', NOW(), 'Integer mollis purus in arcu sollicitudin, at volutpat magna viverra.', DATE_ADD(NOW(), INTERVAL 3 MONTH), 'Hybrid', 55000, 'Nissan Altima', 'johndoe@gmail.com', 'John Doe', 17000, 'Florida', 'Nissan Altima for sale', 'Automatic', 2019, 1, 'Nissan'),
+    (5, 1, 'SUV', 'Houston', 'Silver', NOW(), 'Ut ultricies odio ac sapien faucibus, in elementum libero ultrices.', DATE_ADD(NOW(), INTERVAL 3 MONTH), 'Gasoline', 80000, 'Chevrolet Tahoe', 'johndoe@gmail.com', 'John Doe', 25000, 'Texas', 'Chevrolet Tahoe for sale', 'Automatic', 2015, 1, 'Chevrolet'),
+    (6, 1, 'Hatchback', 'Philadelphia', 'Gray', NOW(), 'Curabitur vitae augue a risus blandit tincidunt.', DATE_ADD(NOW(), INTERVAL 3 MONTH), 'Electric', 40000, 'Tesla Model 3', 'sarahyoung@gmail.com', 'Sarah Young',  45000, 'Pennsylvania', 'Tesla Model 3 for sale', 'Automatic', 2020, 3, 'Tesla'),
+    (7, 1, 'SUV', 'Phoenix', 'Green', NOW(), 'Vivamus quis lorem at elit tristique lacinia non nec felis.', DATE_ADD(NOW(), INTERVAL 3 MONTH), 'Gasoline', 65000, 'Jeep Wrangler', 'annemichael@gmail.com', 'Anne Michael', 30000, 'Arizona', 'Jeep Wrangler for sale', 'Manual', 2018, 2, 'Jeep'),
+    (8, 1, 'Sedan', 'San Antonio', 'Brown', NOW(), 'Maecenas quis lectus id odio vestibulum suscipit.', DATE_ADD(NOW(), INTERVAL 3 MONTH), 'Diesel', 70000, 'BMW 3 Series', 'annemichael@gmail.com', 'Anne Michael', 32000, 'Texas', 'BMW 3 Series for sale', 'Automatic', 2017, 2, 'BMW'),
+    (9, 1, 'Hatchback', 'San Diego', 'Orange', NOW(), 'Fusce quis nulla ut felis ullamcorper malesuada a eu mauris.', DATE_ADD(NOW(), INTERVAL 3 MONTH), 'Gasoline', 60000, 'Volkswagen Golf', 'annemichael@gmail.com', 'Anne Michael', 18000, 'California', 'Volkswagen Golf for sale', 'Manual', 2016, 2, 'Volkswagen'),
+    (10, 1, 'SUV', 'Dallas', 'Purple', NOW(), 'Praesent quis erat vitae ipsum pharetra vehicula.', DATE_ADD(NOW(), INTERVAL 3 MONTH), 'Gasoline', 75000, 'Kia Sportage', 'johndoe@gmail.com', 'John Doe', 21000, 'Texas', 'Kia Sportage for sale', 'Automatic', 2017, 1, 'Kia'),
+    (11, 1, 'Sedan', 'Seattle', 'Silver', NOW(), 'Nullam nec nisi consequat, ultricies metus quis, laoreet ante.', DATE_ADD(NOW(), INTERVAL 3 MONTH), 'Gasoline', 60000, 'Hyundai Sonata', 'annemichael@gmail.com', 'Anne Michael', 16000, 'Washington', 'Hyundai Sonata for sale', 'Automatic', 2015, 2, 'Hyundai'),
+    (12, 1, 'SUV', 'San Francisco', 'Red', NOW(), 'Donec vel quam nec enim consectetur blandit.', DATE_ADD(NOW(), INTERVAL 3 MONTH), 'Electric', 50000, 'Audi e-tron', 'annemichael@gmail.com', 'Anne Michael', 55000, 'California', 'Audi e-tron for sale', 'Automatic', 2019, 2, 'Audi'),
+    (13, 1, 'Hatchback', 'Portland', 'Blue', NOW(), 'Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.', DATE_ADD(NOW(), INTERVAL 3 MONTH), 'Gasoline', 70000, 'Mazda Mazda3','sarahyoung@gmail.com', 'Sarah Young',  14000, 'Oregon', 'Mazda Mazda3 for sale', 'Automatic', 2017, 3, 'Mazda'),
+    (14, 1, 'Sedan', 'Denver', 'Black', NOW(), 'Aenean eleifend ex et diam pulvinar, ut pharetra ante convallis.', DATE_ADD(NOW(), INTERVAL 3 MONTH), 'Diesel', 80000, 'Mercedes-Benz C-Class', 'sarahyoung@gmail.com', 'Sarah Young',  28000, 'Colorado', 'Mercedes-Benz C-Class for sale', 'Automatic', 2018, 3, 'Mercedes-Benz'),
+    (15, 1, 'SUV', 'Las Vegas', 'White', NOW(), 'Suspendisse id purus vitae nulla tincidunt hendrerit.', DATE_ADD(NOW(), INTERVAL 3 MONTH), 'Gasoline', 75000, 'Subaru Outback', 'sarahyoung@gmail.com', 'Sarah Young',  22000, 'Nevada', 'Subaru Outback for sale', 'Automatic', 2016, 3, 'Subaru'),
+    (16, 1, 'Hatchback', 'Austin', 'Green', NOW(), 'Vivamus ut est at risus tempor vestibulum.', DATE_ADD(NOW(), INTERVAL 3 MONTH), 'Hybrid', 45000, 'Toyota Prius', 'johndoe@gmail.com', 'John Doe', 20000, 'Texas', 'Toyota Prius for sale', 'Automatic', 2019, 1, 'Toyota'),
+    (17, 1, 'SUV', 'San Jose', 'Silver', NOW(), 'Morbi vehicula mi in lorem bibendum, nec ultricies enim tincidunt.', DATE_ADD(NOW(), INTERVAL 3 MONTH), 'Gasoline', 90000, 'Ford Escape', 'sarahyoung@gmail.com', 'Sarah Young',  19000, 'California', 'Ford Escape for sale', 'Automatic', 2017, 3, 'Ford'),
+    (18, 1, 'Sedan', 'Charlotte', 'Blue', NOW(), 'Integer laoreet libero vitae tincidunt congue.', DATE_ADD(NOW(), INTERVAL 3 MONTH), 'Gasoline', 55000, 'Chevrolet Malibu', 'sarahyoung@gmail.com', 'Sarah Young',  17000, 'North Carolina', 'Chevrolet Malibu for sale', 'Automatic', 2018, 3, 'Chevrolet'),
+    (19, 1, 'Hatchback', 'Jacksonville', 'Red', NOW(), 'Nam et felis at velit vestibulum placerat.', DATE_ADD(NOW(), INTERVAL 3 MONTH), 'Diesel', 70000, 'Volkswagen Polo', 'sophia@example.com', 'Sophia Brown', 15000, 'Florida', 'Volkswagen Polo for sale', 'Manual', 2016, 1, 'Volkswagen'),
+    (20, 1, 'SUV', 'Indianapolis', 'Black', NOW(), 'Fusce lacinia risus nec tristique vehicula.', DATE_ADD(NOW(), INTERVAL 3 MONTH), 'Gasoline', 80000, 'Kia Sorento', 'johndoe@gmail.com', 'John Doe', 24000, 'Indiana', 'Kia Sorento for sale', 'Automatic', 2017, 1, 'Kia'),
+    (21, 1, 'Sedan', 'Atlanta', 'Gray', NOW(), 'Vestibulum eget nunc eu nisi vestibulum sodales.', DATE_ADD(NOW(), INTERVAL 3 MONTH), 'Gasoline', 60000, 'Honda Accord', 'sarahyoung@gmail.com', 'Sarah Young',  18000, 'Georgia', 'Honda Accord for sale', 'Automatic', 2017, 3, 'Honda'),
+    (22, 1, 'SUV', 'Detroit', 'Green', NOW(), 'Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.', DATE_ADD(NOW(), INTERVAL 3 MONTH), 'Gasoline', 70000, 'Jeep Grand Cherokee', 'johndoe@gmail.com', 'John Doe', 25000, 'Michigan', 'Jeep Grand Cherokee for sale', 'Automatic', 2016, 1, 'Jeep'),
+    (23, 1, 'Hatchback', 'Columbus', 'White', NOW(), 'Donec vel quam nec enim consectetur blandit.', DATE_ADD(NOW(), INTERVAL 3 MONTH), 'Electric', 50000, 'Chevrolet Bolt EV', 'johndoe@gmail.com', 'John Doe', 32000, 'Ohio', 'Chevrolet Bolt EV for sale', 'Automatic', 2019, 1, 'Chevrolet'),
+    (24, 1, 'Sedan', 'Memphis', 'Red', NOW(), 'Nulla euismod orci id leo dictum, nec aliquet libero tincidunt.', DATE_ADD(NOW(), INTERVAL 3 MONTH), 'Hybrid', 45000, 'Toyota Corolla', 'johndoe@gmail.com', 'John Doe', 20000, 'Tennessee', 'Toyota Corolla for sale', 'Automatic', 2018, 1, 'Toyota'),
+    (25, 1, 'SUV', 'Baltimore', 'Blue', NOW(), 'Phasellus efficitur enim sit amet velit dictum, nec suscipit odio dictum.', DATE_ADD(NOW(), INTERVAL 3 MONTH), 'Gasoline', 80000, 'Ford Edge', 'johndoe@gmail.com', 'John Doe', 22000, 'Maryland', 'Ford Edge for sale', 'Automatic', 2017, 1, 'Ford'),
+    (26, 1, 'Hatchback', 'Milwaukee', 'Black', NOW(), 'Quisque sit amet lacus vel est feugiat commodo.', DATE_ADD(NOW(), INTERVAL 3 MONTH), 'Gasoline', 75000, 'Hyundai Elantra', 'annemichael@gmail.com', 'Anne Michael', 18000, 'Wisconsin', 'Hyundai Elantra for sale', 'Automatic', 2016, 2, 'Hyundai'),
+    (27, 1, 'Sedan', 'Boston', 'Silver', NOW(), 'Etiam vel lacus vel justo cursus rhoncus.', DATE_ADD(NOW(), INTERVAL 3 MONTH), 'Diesel', 70000, 'Volkswagen Jetta', 'annemichael@gmail.com', 'Anne Michael', 19000, 'Massachusetts', 'Volkswagen Jetta for sale', 'Automatic', 2018, 2, 'Volkswagen'),
+    (28, 1, 'SUV', 'Washington D.C.', 'Brown', NOW(), 'Vivamus tristique elit a quam ullamcorper, non rhoncus velit iaculis.', DATE_ADD(NOW(), INTERVAL 3 MONTH), 'Gasoline', 90000, 'Kia Telluride', 'annemichael@gmail.com', 'Anne Michael', 27000, 'District of Columbia', 'Kia Telluride for sale', 'Automatic', 2019, 2, 'Kia'),
+    (29, 1, 'Hatchback', 'San Francisco', 'Purple', NOW(), 'Nam auctor mi sit amet turpis fringilla, in molestie libero tincidunt.', DATE_ADD(NOW(), INTERVAL 3 MONTH), 'Electric', 40000, 'Nissan Leaf', 'annemichael@gmail.com', 'Anne Michael', 35000, 'California', 'Nissan Leaf for sale', 'Automatic', 2020, 2, 'Nissan'),
+    (30, 1, 'Sedan', 'Philadelphia', 'Orange', NOW(), 'Integer laoreet libero vitae tincidunt congue.', DATE_ADD(NOW(), INTERVAL 3 MONTH), 'Gasoline', 55000, 'Toyota Supra', 'annemichael@gmail.com', 'Anne Michael', 21000, 'Pennsylvania', 'Toyota Supra for sale', 'Automatic', 2017, 2, 'Toyota'),
+    (31, 1, 'SUV', 'Phoenix', 'Gray', NOW(), 'Duis nec orci non lorem sollicitudin ultricies.', DATE_ADD(NOW(), INTERVAL 3 MONTH), 'Gasoline', 85000, 'Hyundai Tucson', 'sarahyoung@gmail.com', 'Sarah Young',  23000, 'Arizona', 'Hyundai Tucson for sale', 'Automatic', 2018, 3, 'Hyundai'),
+    (32, 1, 'Hatchback', 'Houston', 'Black', NOW(), 'Phasellus et odio ac purus aliquam luctus.', DATE_ADD(NOW(), INTERVAL 3 MONTH), 'Hybrid', 60000, 'Ford Fiesta', 'sarahyoung@gmail.com', 'Sarah Young',  16000, 'Texas', 'Ford Fiesta for sale', 'Automatic', 2016, 3, 'Ford'),
+    (33, 1, 'Sedan', 'San Antonio', 'Blue', NOW(), 'Nulla facilisi. Nulla tincidunt metus ut odio malesuada maximus.', DATE_ADD(NOW(), INTERVAL 3 MONTH), 'Gasoline', 70000, 'Chevrolet Impala', 'sarahyoung@gmail.com', 'Sarah Young',  18000, 'Texas', 'Chevrolet Impala for sale', 'Automatic', 2017, 3, 'Chevrolet'),
+    (34, 1, 'SUV', 'Dallas', 'Red', NOW(), 'Cras at leo a orci imperdiet vehicula.', DATE_ADD(NOW(), INTERVAL 3 MONTH), 'Gasoline', 80000, 'Honda CR-V', 'sarahyoung@gmail.com', 'Sarah Young',  25000, 'Texas', 'Honda CR-V for sale', 'Automatic', 2018, 3, 'Honda'),
+    (35, 1, 'Hatchback', 'Chicago', 'White', NOW(), 'Vivamus id velit in turpis efficitur hendrerit.', DATE_ADD(NOW(), INTERVAL 3 MONTH), 'Electric', 50000, 'BMW i3', 'sarahyoung@gmail.com', 'Sarah Young', 32000, 'Illinois', 'BMW i3 for sale', 'Automatic', 2019, 3, 'BMW'),
+    (36, 1, 'Sedan', 'Los Angeles', 'Black', NOW(), 'Integer auctor nulla eu nulla eleifend accumsan.', DATE_ADD(NOW(), INTERVAL 3 MONTH), 'Diesel', 60000, 'Audi A4', 'johndoe@gmail.com', 'John Doe', 27000, 'California', 'Audi A4 for sale', 'Automatic', 2017, 1, 'Audi'),
+    (37, 1, 'SUV', 'New York', 'Silver', NOW(), 'Pellentesque vel lacus consectetur, consectetur justo vel, tincidunt enim.', DATE_ADD(NOW(), INTERVAL 3 MONTH), 'Gasoline', 75000, 'Mercedes-Benz GLC', 'johndoe@gmail.com', 'John Doe', 29000, 'New York', 'Mercedes-Benz GLC for sale', 'Automatic', 2018, 1, 'Mercedes-Benz'),
+    (38, 1, 'Hatchback', 'Miami', 'Gray', NOW(), 'Sed a est non velit tincidunt aliquet at nec justo.', DATE_ADD(NOW(), INTERVAL 3 MONTH), 'Gasoline', 55000, 'Volkswagen Golf GTI', 'annemichael@gmail.com', 'Anne Michael', 20000, 'Florida', 'Volkswagen Golf GTI for sale', 'Manual', 2016, 2, 'Volkswagen'),
+    (39, 1, 'Sedan', 'Seattle', 'Blue', NOW(), 'Morbi in dolor ac metus egestas aliquam vel at libero.', DATE_ADD(NOW(), INTERVAL 3 MONTH), 'Hybrid', 50000, 'Toyota Prius Prime','johndoe@gmail.com', 'John Doe', 35000, 'Washington', 'Toyota Prius Prime for sale', 'Automatic', 2020, 1, 'Toyota'),
+    (40, 1, 'Hatchback', 'San Francisco', 'White', NOW(), 'Fusce id turpis a libero tincidunt consequat a sed risus.', DATE_ADD(NOW(), INTERVAL 3 MONTH), 'Gasoline', 80000, 'Kia Picanto', 'annemichael@gmail.com', 'Anne Michael', 22000, 'California', 'Kia Picanto for sale', 'Automatic', 2017, 2, 'Kia');
+
+
+INSERT INTO carspotdb.post_image(`id`,`image_url`,`post_id`) VALUES
+    (1, "https://hips.hearstapps.com/hmg-prod/images/2024-toyota-camry-102-64cbc4858e198.jpg?crop=0.469xw:0.527xh;0.332xw,0.190xh&resize=768:*",1),
+    (2, "https://2684054.fs1.hubspotusercontent-na1.net/hubfs/2684054/2025-Ford-Explorer-ST-hero-credit-ford.jpg",2),
+    (3, "https://cdn.jdpower.com/JDPA_2020-Honda-Civic-Sport-Touring-Hatchback-White-Front-Quarter.jpg" ,3),
+    (4, "https://www.cnet.com/a/img/resize/b55b34f3d2ee0304a84a817ae8e17a2d18040876/hub/2018/12/31/f00cf81b-738d-4579-a412-ccfefc72261d/2019-nissan-altima-platinum-1.jpg?auto=webp&fit=crop&height=675&width=1200", 4),
+    (5, "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/2022_Chevrolet_Tahoe_RST%2C_front_3.7.22.jpg/1200px-2022_Chevrolet_Tahoe_RST%2C_front_3.7.22.jpg", 5),
+    (6, "https://car-images.bauersecure.com/wp-images/12942/063-tesla-model-3-2024-review.jpg", 6),
+    (7, "https://carsguide-res.cloudinary.com/image/upload/f_auto%2Cfl_lossy%2Cq_auto%2Ct_default/v1/editorial/segment_review/hero_image/2023-jeep-wrangler-overload-white-1001x565.jpg", 7),
+    (8, "https://media.citizen.co.za/wp-content/uploads/2023/03/B1-2-2.jpg", 8),
+    (9, "https://www.cnet.com/a/img/resize/423e6b439427ab3c03d5a8faff59f22e7163af12/hub/2022/03/30/e072f29e-c57b-4101-a036-1921695e7721/2022-vw-golf-gti-long-term-001.jpg?auto=webp&width=1920", 9),
+    (10, "https://lh3.googleusercontent.com/_JqZcPKKFyK_faQVi0xWto2qm8BL2x8_A6rDFtItVmMJcc_CQCMn3C7q8Eb4QQiA-zh8jcJWFoCq3ikomzxSFZgP9HyfIJVNzozTZbhAM6JB2A=s750", 10),
+    (11, "https://cdn.motor1.com/images/mgl/6nqAl/s3/2022-hyundai-sonata-n-line-night-edition-three-quarters-on-road.jpg", 11),
+    (12, "https://ev-database.org/img/auto/Audi_e-tron_S_Sportback_2020/Audi_e-tron_S_Sportback_2020-01@2x.jpg", 12),
+    (13, "https://image-prod.iol.co.za/16x9/800/?source=https://xlibris.public.prod.oc.inl.infomaker.io:8443/opencontent/objects/44b0499f-9b6a-5d80-a2a1-76d657471daf&operation=CROP&offset=137x103&resize=1352x769", 13),
+    (14, "https://parkers-images.bauersecure.com/wp-images/22257/cut-out/930x620/mercedes-c-class.jpg", 14),
+    (15, "https://www.autocar.co.uk/sites/autocar.co.uk/files/styles/gallery_slide/public/subaru-outback-review-2023-01-cornering-front.jpg?itok=3hMVk59q", 15),
+    (16, "https://hips.hearstapps.com/hmg-prod/amv-prod-cad-assets/images/15q2/657948/2015-toyota-prius-review-car-and-driver-photo-660322-s-original.jpg?fill=16:9&resize=1200:*", 16),
+    (17, "https://hips.hearstapps.com/hmg-prod/images/2023-ford-escape-phev-110-64bfd22e1daec.jpg?crop=0.653xw:0.733xh;0.231xw,0.262xh&resize=768:*", 17),
+    (18, "https://www.copilotsearch.com/uploads/0_chevrolet_malibu_-e2xx-_10.webp", 18),
+    (19, "https://lh3.googleusercontent.com/HJlfoB4YlIu7bmlmQn4HRLsDRDZOS2jvdRr4lPw4SkUrCmRfq_GH728Vj1GNFB_w5dhLRBP-5W-ZNvSxKDAac5mLZEdmK_5MzUdGH8fEjxLfuw=s750", 19),
+    (20, "https://experience.kia.co.za/wp-content/uploads/2023/04/Sorento-Thami-1200x800-Frame-1.jpg", 20),
+    (21, "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Honda_Accord_%28CV3%29_EX_eHEV%2C_2021%2C_front.jpg/1200px-Honda_Accord_%28CV3%29_EX_eHEV%2C_2021%2C_front.jpg", 21),
+    (22, "https://www.carmag.co.za/wp-content/uploads/2022/12/Jeep-Grand_Cherokee_L-2021-1600-02-jpg.webp", 22),
+    (23, "https://di-uploads-development.dealerinspire.com/betleychevy-legacymigration0720/uploads/2020/07/2020-chevy-bolt-ev.jpg", 23),
+    (24, "https://www.team-bhp.com/sites/default/files/styles/check_extra_large_for_review/public/1_721.jpg", 24),
+    (25, "https://carwow-uk-wp-2.imgix.net/Edge-driving-rear.jpg?auto=format&cs=tinysrgb&fit=clip&ixlib=rb-1.1.0&q=60&w=750", 25),
+    (26, "https://hips.hearstapps.com/hmg-prod/images/2024-hyundai-elantra-limited-106-64ef85e2044f5.jpg?crop=0.661xw:0.496xh;0.197xw,0.381xh&resize=1200:*", 26),
+    (27, "https://hips.hearstapps.com/hmg-prod/images/2023-volkswagen-jetta-sport-1-5t-manual-34-6410731d8206e.jpg?crop=0.678xw:0.508xh;0.131xw,0.338xh&resize=1200:*", 27),
+    (28, "https://media.ed.edmunds-media.com/kia/telluride/2024/oem/2024_kia_telluride_4dr-suv_sx-prestige-x-pro_fq_oem_1_1600.jpg", 28),
+    (29, "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/2018_Nissan_Leaf_Tekna_Front.jpg/1200px-2018_Nissan_Leaf_Tekna_Front.jpg", 29),
+    (30, "https://di-uploads-pod16.dealerinspire.com/toyotaofnorthcharlotte/uploads/2019/01/N-Charlotte-Toyota-sports-car.jpeg", 30),
+    (31, "https://lh3.googleusercontent.com/GFZgH5-ZrQDZrIBYhKZ5VOU3Fv70o4LR3VdbGEhIps4gM7kF8t2Y3BjkEYO3piUZitaAzzfMeQAu_WCp9SEgMcz2AB4B6hJoMQ=s1200", 31),
+    (32, "https://hips.hearstapps.com/hmg-prod/images/2017-ford-fiesta-st-114-1-1557785159.jpg?crop=0.819xw:1.00xh;0.0929xw,0&resize=768:*", 32),
+    (33, "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/2014_Chevrolet_Impala_LTZ_3.6L_with_courtesy_plates%2C_front_6.1.19.jpg/1200px-2014_Chevrolet_Impala_LTZ_3.6L_with_courtesy_plates%2C_front_6.1.19.jpg", 33),
+    (34, "https://cdn.honda.co.za/main-03/general/_1200x630_fit_center-center_82_none/CRV_SEO.jpg?mtime=1706716910", 34),
+    (35, "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/2018_BMW_i3_facelift_%281%29.jpg/1200px-2018_BMW_i3_facelift_%281%29.jpg", 35),
+    (36, "https://cdn.motor1.com/images/mgl/Qeegp1/s3/2023-audi-a4-avant-unofficial-rendering.jpg", 36),
+    (37, "https://www.mercedes-benz.co.za/content/south-africa/en/passengercars/models/suv/glc/overview/_jcr_content/root/responsivegrid/tabs/tabitem/hotspot_module/hotspot_simple_image.component.damq1.3320617006119.jpg/mercedes-benz-glc-suv-x254-exterior-hotspot-3302x1858-05-2022.jpg", 37),
+    (38, "https://www.carmag.co.za/wp-content/uploads/2024/01/2024-Volkswagen-Golf-Mk8.5-facelift-GTI-debut-1-jpeg.webp", 38),
+    (39, "https://hips.hearstapps.com/hmg-prod/images/2023-toyota-prius-prime-xse-474-647f7e6f0b72e.jpg?crop=0.631xw:0.472xh;0.317xw,0.487xh&resize=1200:*", 39),
+    (40, "https://www.topgear.com/sites/default/files/cars-car/image/2022/08/Large-19436-KiaPicantoGT-Line.jpg?w=1280&h=720", 40);

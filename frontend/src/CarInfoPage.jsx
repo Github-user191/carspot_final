@@ -102,6 +102,8 @@ const CarInfoPage = () => {
 
                 setLoading(true)
 
+                console.log("get post by id ")
+                console.log(postCreatorEmail)
                 UserService.getUserInfoByEmailAddress(postCreatorEmail)
                 .then(res => {
                     const {fullName, emailAddress, userAvatar, mobileNumber} = res.data;
@@ -167,6 +169,7 @@ const CarInfoPage = () => {
 
                 <div className="car-info-page-right-content">
 
+                    {JSON.stringify(postCreatorInfo)}
                     {userPosts.length > 0 ? <h4>Some of {postCreatorInfo.postCreatorFullName}'s ads</h4> : ""}
                     {userPosts && (
                         userPosts.map(post => {
@@ -316,7 +319,7 @@ const CarInfoPage = () => {
                                     phoneInfo={postCreatorInfo.postCreatorMobileNumber}
                                     emailIcon={<AiOutlineMail size={16} />}
                                     emailText="Email"
-                                    emailInfo="demo@carspot.com"
+                                    emailInfo={postCreatorInfo.postCreatorEmailAddress}
                                     chatIcon={<BiChat size={16}/>}
                                     chatText="Chat"
                                     chatInfo={`Chat with ${postCreatorInfo.postCreatorFullName.split(" ")[0]}`}

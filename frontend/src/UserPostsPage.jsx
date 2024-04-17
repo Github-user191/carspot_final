@@ -68,6 +68,8 @@ const UserPostsPage = () => {
                         setWatchlistedPostCount(0)
                         setLoading(false);
                     }
+                }).finally(() => {
+                    setIdList([])
                 })
         }
 
@@ -76,6 +78,8 @@ const UserPostsPage = () => {
 
     const deleteActivePostsHandler = (event) => {
         setLoading(true)
+        console.log(idList)
+
         PostService.deletePosts(idList)
         .then((res) => {
             const { totalItems, totalPages, currentPage, posts } = res.data;
@@ -92,6 +96,8 @@ const UserPostsPage = () => {
                 setActivePostCount(0)
                 setLoading(false);
             }
+        }).finally(() => {
+            setIdList([])
         })
     };
 
@@ -106,6 +112,7 @@ const UserPostsPage = () => {
             tempList.pop(event.target.id);
             setDeleteActivePostCount(prev => prev - 1);
         }
+        console.log(tempList)
         setIdList(tempList);
     };
 
@@ -194,16 +201,19 @@ const UserPostsPage = () => {
 
     const getUserWatchlistPosts = (requestParams) => {
         setLoading(true);
+
+        console.log(requestParams)
         WatchlistPostService.getUserWatchlistPosts(requestParams)
             .then((res) => {
                 const { totalItems, totalPages, currentPage, posts } = res.data;
-
+              
                 setLoading(false);
                 setWatchlistPosts(posts);
                 setWatchlistedPostCount(totalItems);
                 setWatchlistPostsPageCount(totalPages);
             })
             .catch((err) => {
+                
                 setWatchlistPostsPageCount(1);
                 setWatchlistPosts([]);
                 setWatchlistedPostCount(0);
