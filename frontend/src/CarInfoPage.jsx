@@ -9,7 +9,7 @@ import UserProfileInfoComponent from './UserProfileInfoComponent'
 import {FiPhone} from 'react-icons/fi'
 import {BiChat} from 'react-icons/bi'
 import {AiOutlineMail} from 'react-icons/ai'
-import {BiUser} from 'react-icons/bi'
+
 import defaultAvatar from './assets/user-profile.svg'
 import twitter from './assets/twitter.svg'
 import facebook from './assets/facebook.svg'
