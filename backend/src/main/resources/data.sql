@@ -5,10 +5,10 @@ VALUES(1, 'ROLE_USER'),
 
 
 
-# INSERT INTO carspotdb.user(`id`, `date_joined`, `email_address`, `email_verified`, `full_name`, `mobile_number`, `password`) VALUES
-#     (1, NOW(), 'johndoe@gmail.com',1,'John Doe', '0773339222','password!'),
-#     (2, NOW(), 'annemichael@gmail.com',1, 'Anne Michael','0872223333', 'password!'),
-#     (3, NOW(), 'sarahyoung@gmail.com', 1, 'Sarah Young', '0723339992', 'password!');
+ INSERT INTO carspotdb.user(`id`, `date_joined`, `email_address`, `email_verified`, `full_name`, `mobile_number`, `password`) VALUES
+     (1, NOW(), 'johndoe@gmail.com',1,'John Doe', '07229933322','password!'),
+     (2, NOW(), 'annemichael@gmail.com',1, 'Anne Michael','07229933322', 'password!'),
+     (3, NOW(), 'sarahyoung@gmail.com', 1, 'Sarah Young', '07229933322', 'password!');
 
 INSERT INTO carspotdb.user_roles(`user_id`, `role_id`)
 VALUES(1, 1),

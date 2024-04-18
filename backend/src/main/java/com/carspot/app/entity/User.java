@@ -54,11 +54,11 @@ public class User implements Serializable {
     private AuthProvider provider;
 
     @Column(nullable = true)
-    private int totalActivePostCount = 0;
+    private Integer totalActivePostCount;
     @Column(nullable = true)
-    private int totalPostCount  = 0;
+    private Integer totalPostCount;
     @Column(nullable = true)
-    private int totalWatchlistPostCount  = 0;
+    private Integer totalWatchlistPostCount;
 
     public User(String fullName, String emailAddress, String mobileNumber, String password) {
         this.fullName = fullName;

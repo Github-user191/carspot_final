@@ -17,6 +17,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 
+import java.util.HashSet;
 import java.util.List;
 
 
@@ -42,19 +43,26 @@ public class BackendApplication implements CommandLineRunner {
 
     @Autowired
     private UserRepository userRepository;
+
+
     @Override
     public void run(String... args) throws Exception {
 
-        if(userRepository.findAll().isEmpty()) {
-            User user1 = new User(0, "John Doe", "johndoe@gmail.com", "07229933322", passwordEncoderSeed().encode("password!"));
-            User user2 = new User(0, "Anne Michael", "annemichael@gmail.com", "06229933322", passwordEncoderSeed().encode("password!"));
-            User user3 = new User(0, "Sarah Young", "sarahyoung@gmail.com", "08221933312", passwordEncoderSeed().encode("password!"));
 
-            user1.setEmailVerified(true);
-            user2.setEmailVerified(true);
-            user3.setEmailVerified(true);
+        var user1 = userRepository.findById(1L);
+        var user2 = userRepository.findById(2L);
+        var user3 = userRepository.findById(3L);
 
-            userRepository.saveAll(List.of(user1,user2,user3));
+        if(user1.isPresent() && user2.isPresent() && user3.isPresent()) {
+            System.out.println("IN RUNNER");
+            user1.get().setPassword(passwordEncoderSeed().encode("password!"));
+            user1.get().setEmailVerified(true);
+            user2.get().setPassword(passwordEncoderSeed().encode("password!"));
+            user2.get().setEmailVerified(true);
+            user3.get().setPassword(passwordEncoderSeed().encode("password!"));
+            user3.get().setEmailVerified(true);
+
+            userRepository.saveAll(List.of(user1.get(), user2.get(), user3.get()));
         }
 
 
@@ -62,10 +70,6 @@ public class BackendApplication implements CommandLineRunner {
 
     public static void main(String[] args) {
         SpringApplication.run(BackendApplication.class, args);
-
-        String vaultUrl = "https://carspotkv.vault.azure.net/";
-
-
 
     }
 }
