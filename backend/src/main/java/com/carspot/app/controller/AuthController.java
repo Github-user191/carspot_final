@@ -1,5 +1,6 @@
 package com.carspot.app.controller;
 
+import com.carspot.app.config.AppProperties;
 import com.carspot.app.event.RegistrationCompleteEvent;
 import com.carspot.app.exception.exceptions.AccountNotVerifiedException;
 import com.carspot.app.entity.ConfirmationToken;
@@ -173,7 +174,7 @@ public class AuthController {
 
 
     private String applicationURL(HttpServletRequest request) {
-        return "https://carspot.quest" + request.getContextPath();
+        return new AppProperties.Auth().getClientUrl() + request.getContextPath();
     }
 
 

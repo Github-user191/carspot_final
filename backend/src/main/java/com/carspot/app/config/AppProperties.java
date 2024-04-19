@@ -15,6 +15,10 @@ public class AppProperties {
         private String tokenSecret;
         private long tokenExpirationMsec;
 
+        public String getClientUrl() {
+            return "https://carspot-app.netlify.app";
+        }
+
         public String getTokenSecret() {
             return tokenSecret;
         }
