@@ -2,9 +2,9 @@ import axios from "axios";
 import { webStore } from '../utils/WebStore';
 
 
-const BASE_URL = `${webStore.APP_URL}/api/user`;
-const CONTACT_FORM_URL=`${webStore.APP_URL}/api/contact/send`;
-const USER_REVIEW_URL=`${webStore.APP_URL}/api/review`;
+const BASE_URL = `/api/user`;
+const CONTACT_FORM_URL=`/api/contact/send`;
+const USER_REVIEW_URL=`/api/review`;
 class UserService {
 
     async getUserInfo() {

@@ -102,8 +102,6 @@ const CarInfoPage = () => {
 
                 setLoading(true)
 
-                console.log("get post by id ")
-                console.log(postCreatorEmail)
                 UserService.getUserInfoByEmailAddress(postCreatorEmail)
                 .then(res => {
                     const {fullName, emailAddress, userAvatar, mobileNumber} = res.data;

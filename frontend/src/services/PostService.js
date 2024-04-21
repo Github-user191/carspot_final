@@ -1,7 +1,7 @@
 import axios from "axios";
 import { webStore } from '../utils/WebStore';
 
-const BASE_URL = `${webStore.APP_URL}/api`;
+const BASE_URL = `/api`;
 
 class PostService {
 

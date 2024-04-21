@@ -3,7 +3,8 @@ import jwtDecode from 'jwt-decode';
 import { webStore } from '../utils/WebStore';
 
 
-const BASE_URL = `${webStore.APP_URL}/api/auth`;
+/* REMOVE BASE URL TO ALLOW PROXY */
+const BASE_URL = `/api/auth`;
 
 
 class AuthenticationService {

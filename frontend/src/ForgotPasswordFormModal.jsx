@@ -36,7 +36,6 @@ const ForgotPasswordFormModal = () => {
     const handleForgotPasswordSubmit = (event) => {
         event.preventDefault();
         
-        console.log(user.emailAddress)
         setErrors({
             forgotPasswordEmailError: ''
         })

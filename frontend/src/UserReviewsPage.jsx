@@ -151,7 +151,7 @@ const UserReviewsPage = () => {
                 setErrors({
                     reviewError: data.review
                 })
-                console.log(data)
+  
             })
 
     }

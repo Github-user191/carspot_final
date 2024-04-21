@@ -1,1 +1,2 @@
+/api/* http://mycontabovps.site:9090/api/:splat 200
 /* /index.html 200

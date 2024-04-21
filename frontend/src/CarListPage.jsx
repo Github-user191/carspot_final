@@ -302,7 +302,7 @@ const CarListPage = (props) => {
    // {provinceList[index].cities.map(city => city.city
     useEffect(() => {
       getAllPosts(getRequestParams(selectedBrands, searchQuery, selectedLocation.province, selectedLocation.city, postsPageNo, postsPageSize, sortBy, sortDir, value[0], value[1]));
-      getPostCountByBrandAndProvince()
+      //getPostCountByBrandAndProvince()
     }, [postsPageNo, postsPageSize]);
 
 

@@ -78,7 +78,7 @@ const UserPostsPage = () => {
 
     const deleteActivePostsHandler = (event) => {
         setLoading(true)
-        console.log(idList)
+
 
         PostService.deletePosts(idList)
         .then((res) => {
@@ -112,7 +112,7 @@ const UserPostsPage = () => {
             tempList.pop(event.target.id);
             setDeleteActivePostCount(prev => prev - 1);
         }
-        console.log(tempList)
+
         setIdList(tempList);
     };
 
@@ -202,7 +202,6 @@ const UserPostsPage = () => {
     const getUserWatchlistPosts = (requestParams) => {
         setLoading(true);
 
-        console.log(requestParams)
         WatchlistPostService.getUserWatchlistPosts(requestParams)
             .then((res) => {
                 const { totalItems, totalPages, currentPage, posts } = res.data;
